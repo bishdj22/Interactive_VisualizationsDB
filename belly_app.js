@@ -2,7 +2,7 @@
 function __init__() {
     var dropdown = d3.select("#selDataset");
  
-    d3.json("../samples.json").then((data)=> {
+    d3.json("samples.json").then((data)=> {
         console.log(data)
 
         data.names.forEach(function(name) {
@@ -18,7 +18,7 @@ function __init__() {
 // Build Charts function on id/sample selected through dropdown (event listener in HTML)
 
 function buildCharts(id){
-    d3.json("../samples.json").then(function(data) {
+    d3.json("samples.json").then(function(data) {
         console.log(data);
 
         var dropdown = d3.select("#selDataset");
