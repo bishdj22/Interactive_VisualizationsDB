@@ -1,0 +1,65 @@
+Code Dumpster
+
+function __init__() {
+    var dropdown = d3.select("#selDataset");
+ 
+    d3.json("../samples.json").then((data)=> {
+        console.log(data)
+
+        data.names.forEach(function(name) {
+            dropdown.append("option").text(name).property("value");
+        });
+
+        console.log(data.names)
+    });
+}
+
+       top10 = OTUchartdata.slice(0,10);
+       console.log(top10)
+
+       var OTU_id = top10.map(id => "OTU" + id)
+       console.log(`OTU IDS: ${OTU_id}`);
+
+
+ //console.log(demo.age)
+
+        // obj.forEach(function(weatherReport) {
+        //     console.log(weatherReport);
+        //     var row = tbody.append("tr");
+        //   });
+
+ // for (var i = 0; metaData.length; i++){
+        //     var obj = metaData[0];
+        //     var row = tbody.append("tr");
+        //     Object.entries(obj).forEach(function([key, value]) {
+        //         console.log(key, value);
+        //         var cell = row.append("td");
+        //         cell.text(value);
+        //     })
+        // };
+
+
+Bad code for MetaData 2/26
+
+   
+        // metaData[0].forEach((key, value) => {
+        //     var row = tbody.append("tr");
+        //     var cell = row.append("td");
+        //          cell.text(`${key}: ${value}`);
+        //      });
+
+        // var demo = metaData;
+
+        // const myMap = new MyMap();
+        // myMap.put("key1", "value1");
+        // myMap.put("key2", "value2");
+        // myMap.forEach((k, v) => console.log(`Key is ${k} and value is ${v}`));
+       
+        
+        // metaData[0].forEach((x) => {
+        //     var row = tbody.append("tr");
+        //     Object.entries(x).forEach(([key, value]) => {
+        //       var cell = row.append("td");
+        //       cell.text(value);
+        //     });
+        //   });
